@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+          /*  background-image: url('https://source.unsplash.com/collection/190727/1600x900') ;
+            background-position: center;
+            background-repeat: no-repeat;  */
+         /*   opacity: 0.5;  */
+           cursor: pointer;
+          
+        }
+        header::before{
+            content:""; 
+            background-image: url("https://source.unsplash.com/collection/190727/1600x900");
+            background-position: center;
+            background-repeat: no-repeat; 
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3; /*image ki opicity pe effect ataa hai ..iski help se ham image ko less visible kar sakte hai jisse hamari text jada visible ho*/
+
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            margin: 0px 20px;
+            padding: 3px 3px;
+            align-items: center;
+           /* border: 2px solid red; */
+            height: 344px;
+            justify-content: center;
+        }
+       /* section::before{
+            content: "this is the content before selection"
+        } */
+        
+        li{
+            list-style: none; 
+            padding: 20px 23px;
+            
+        }
+        li:hover{
+            background-color: black;
+            text-decoration: underline;
+            border-radius: 30px;
+        }
+        .navigation{
+            display: flex;
+            font-size: 30px;
+           
+        }
+        h3{
+            font-size: 3rem;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">home</li>
+                <li class="item">about</li>
+                <li class="item">services</li>
+                <li class="item">contact us</li>
+            </ul>
+        </nav>
+    </header>
+            <section>
+                <h3>welcome to coding world</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ex suscipit repellendus architecto, est in aut laborum esse illum, quam eveniet soluta maiores vitae. Dolores tempora deleniti iste fuga dolor officiis voluptas nostrum velit!</p>
+            </section>
+            <hr>
+</body>
+</html>

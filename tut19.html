@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, Borders and background</title>
+    <style>
+        #firstpara {
+            color: red;
+            background-color: rgb(214, 152, 107);
+            height: 100px;
+            width: 400px;
+            /*border-width: 6px;
+            border-style: solid;
+            border-color: purple; */
+            border: 6px solid purple;
+            border-radius: 10px;
+            /* for rounded corner*/
+        }
+
+        #secpara {
+            color: red;
+            background-color: rgb(214, 152, 107);
+            height: 100px;
+            width: 400px;
+            border-top: 6px solid violet;
+            border-right: 6px solid green;
+            border-bottom: 6px solid black;
+            border-left: 6px solid rgb(72, 12, 129);
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 8px;
+            border-top-right-radius: 11px;
+            border-bottom-right-radius: 20px;
+        }
+
+        #thirdpara {
+            height: 400px;
+            width: 500px;
+            background-image: url(https://lh3.googleusercontent.com/-IDm01xdatdA/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucni-1A-qISyudvVM47pfw9E0Yo3TQ/s128-c/photo.jpg);  /*from internet*/
+            border: 3px solid green;
+            background-repeat: no-repeat;
+            background-color: rgb(107, 210, 214);
+            /* image will show only one time OR repeat-x or repeat-y*/
+            /*background-position: 20px top;*/
+            /* background-position:  top center ; */
+            background-position: bottom center;
+            /* ist parameter top,bottom ya center hoga and second parameter right,left,center hoga*/
+            /* background-position:  top right ; */
+            /* background-position:  top left ; */
+            /* background-position:  center center ; */
+            /* background-position:  bottom left ; */
+            /* background-position:  bottom right ; */
+            /*background-position: center center;*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3> This is heading</h3>
+    <p id="firstpara">This is a praragraph</p>
+    <h3> This is heading </h3>
+    <p id="secpara">This is a praragraph</p>
+
+    <h3> This is heading </h3>
+    <p id="thirdpara">This is a praragraph</p>
+</body>
+
+</html>

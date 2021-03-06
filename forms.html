@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <h2>This is forms tut</h2>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div>
+            <!-- div takes only one block in a line-->
+            <!--Name:--> <input type="text" name="My name" id="name">
+        </div>
+        <br> <!-- br is not recomended here because it is done by css-->
+        <div>
+            roll-no: <input type="text" name="my roll number">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="my email">
+        </div>
+        <br>
+        <div>
+            Marks:<input type="number" name="my marks">
+        </div>
+        <br>
+        <div>
+            Date:<input type="date" name="set date" id="">
+        </div>
+        <br>
+        <div>
+            You are not a robot: <input type="checkbox" name="not robot" checked>
+            <!-- if we use c
+                hecked at last then the check box wll be checked by default-->
+        </div>
+        <br>
+        <div>
+            Gender:Male <input type="radio" name="My gender"> Female <input type="radio" name="My gender">
+            or other <input type="radio" name="My gender">
+        </div>
+        <br>
+        
+        <div>
+            <label for="texthere">Write about yourself</label>
+            <!--Write about yourself:--><br> <textarea name="my text" id="texthere" cols="60"
+                rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car"> Car</label>
+            <select name="my car" id="car">
+                <option value="swift"> Swift</option>
+                <!--we can mark any option already selected using selected as done in checkbox -->
+                <option value="alto" selected>Alto800</option>
+                <option value="celerio"> Celerio</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit now">
+            <input type="reset" value="reset now">
+        </div>
+    </form>
+</body>
+
+</html>

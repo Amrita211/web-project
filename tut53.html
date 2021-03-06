@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert, confirmm] and prompt</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+
+</body>
+<script>
+    // alert in js does not return anything
+    alert("This is a messasge");
+
+    // prompt in js
+    let name = prompt("what is your name?", "guest");
+    console.log(name);
+
+    // confirm in js
+    let deletepost =confirm("Do you really want to delete this post !");
+    // console.log(deletepost);
+
+    if(deletepost){
+        console.log("your post is deleted");
+    } 
+    else{
+        console.log("your post is rstore");
+    }
+</script>
+</html>

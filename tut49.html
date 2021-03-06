@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String function</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+        var string = "heelo , this is string function";
+        console.log(string);
+
+        // first index
+        console.log(string.indexOf("lo"));
+
+        //last index
+        console.log(string.lastIndexOf("ing"));
+
+        //substring
+        console.log(string.substring(1,7));
+        //slicing
+        console.log(string.slice(1,7));
+
+        //substr function
+        console.log(string.substr(1,7));
+        // replace function
+        console.log(string.replace("function", "method"));
+
+        // uppeer and lower case conversion
+
+        console.log(string.toLowerCase());
+        console.log(string.toUpperCase());
+
+        // remove whitespaces from start and last only but not from  the middle
+        var str1 = "    hdhjd      dndjhfdj   hdbhfvd   "
+        console.log(str1);
+        console.log(str1.trim());
+
+        // extracting character
+
+        console.log(string.charAt(2));
+        
+
+    </script>
+</body>
+</html>

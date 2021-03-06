@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container {
+            height: 334px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+
+
+            /*initialise the container as flex box. properties of flex for flex container*/
+            /* flex-direction: row; **/
+            /* default value of flex direction is row*/
+            /* flex-direction: column;
+            flex-direction: row-reverse; /* right side se box ki filling start hogi*/
+            /*flex-direction: column-reverse; */
+            /* bottom se start hoga*/
+
+            /*  flex-wrap: wrap;      */
+            /* by default value is no wrap i.e it will not wrap*/
+            /*flex-wrap: wrap-reverse;*/
+
+            /* flex-flow: row-reverse wrap; */
+            /* flex direction and flex wrap ek line me karne k liye flex-flowuse karte hai*/
+
+            /* justify-content: center; /*boxes center me ho jaate hai */
+
+            /* justify-content: space-between; */
+            /* har box k beech me equal gap aa jayega except from start*/
+            /*justify-content: space-evenly; */
+            /* har box k beech me same space aa jayehi and from starting also */
+            /*justify-content: space-around; */
+            /* har ek box k left and rihght side me same space aa jaayegi including from start*/
+
+            /* align-items: center; */
+            /* har element vertically center me ho jaayenge*/
+            /*align-items: flex-start; */
+            /* by defult*/
+            /* align-items: flex-end; */
+            /*elements bottom me aa jaayenge verticaly*/
+            /*align-items: stretch; */
+            /* elements k beech equal gap aayega vertically*/
+
+        }
+
+        .item {
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 3px;
+            padding: 4px;
+            width: 100px;
+            height: 120px;
+        }
+
+        #item1 {
+            /* flex properties for flex items*/
+            /* higher the order , later it will show up in the container*/
+            order: 2;
+
+            /*negative value isn't allowed and it will grow at 3 proportion whenthe web page is strech larger*/
+            /*flex-grow: 3;   */
+
+            /*negative value isn't allowed and it will shrink at 2 proportion whenthe web page is strech as smaller*/
+            /*  flex-shrink: 2;   */
+        }
+
+        #item2 {
+            /*   flex-grow: 2;  */
+
+
+            /* when flex-direction:  is set to row then flex-basis controls the width */
+            /* when flex-direction:  is set to column then flex-basis controls the height */
+            flex-basis: 200px;
+
+        }
+
+        #item3 {
+
+            /* flex-grow flex-shrink flex-basis*/
+            flex: 2 3 20px;
+
+            align-self: center;
+            /* element center me aa jaayega*/
+            align-self: flex-start;
+            /* element start me aayega*/
+            align-self: flex-end;
+            /* element bottom me aa jayega*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is flex tutorial</h1>
+    <div class="container">
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">seoncd box</div>
+        <div class="item" id="item3">third box</div>
+        <!--  <div class="item" id="item4">fourth box</div>
+        <div class="item" id="item5">fifth box</div>
+        <div class="item" id="item6">sixth box</div>  -->
+    </div>
+</body>
+
+</html>

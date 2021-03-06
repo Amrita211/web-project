@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        h1 {
+            font-weight: bold;
+            background-color: yellow;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        /* div k andar jitne bhi p honge[chahe wo kitne bhi depth me ho] wo sab affect honge*/
+        /* div li p{
+            color: brown;
+            background-color: cornflowerblue;
+        } */
+
+
+        /* div k andar jo bhi direct child p hoga sirf wo hi affect hoga*/
+        /* div > p{ 
+            color: brown;
+            background-color: cornflowerblue;
+        } */
+
+
+        /* jis bhi paragraph i.e p ka peechla sibling div hoga sirf wahi para affect hoga*/
+        div+p {
+            color: rgb(243, 239, 239);
+            background-color: rgb(8, 43, 107);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is more on selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <p>This is inner para of li</p>
+                </li>
+                <li>This will not get affected</li>
+                <p>This is another para of ul</p>
+            </ul>
+            <p>This is the most inner para</p>
+        </div>
+        <p>This is the middle para</p>
+    </div>
+    <p>This is the outer para</p>
+</body>
+
+</html>

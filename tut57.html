@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js set time out and clear time out</title>
+</head>
+
+<body>
+    <div class="container">This is a container</div>
+    this is <span id="time"></span>
+    <script>
+        console.log("This is java script");
+        // setTimeout --> Allows us  to run the function once after the interval of time
+        // clearTimeout --> Allows us  to run the function repeatedly after the interval of time
+        function greet(name, text) {
+            console.log("hello " + name + " " + text);
+        }
+        // timeOut=setTimeout(greet, 5000, "abcd","take care" ); // function ka name hoga only, parentheses include nhi hogi
+        // console.log(timeOut);
+        // clearTimeout(timeOut); // set time interval k complete hone k baad wo clear ho jaayega
+
+        // intervalId=setInterval(greet, 3000, "abcds" , "good Morning");
+        // clearInterval(intervalId); // ek baar bhi print nhi hoga
+
+        function displayTime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById("time");
+        }
+        setInterval(displayTime, 1000);
+    </script>
+</body>
+
+</html>

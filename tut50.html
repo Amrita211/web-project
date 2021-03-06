@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS scoping</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        var str1 = "This is a string";
+        var str1 = "This is a second string";
+        console.log(str1);
+
+        // let variable ka scope ek block tak hi rehta hai
+        // let a = "we";
+        // {
+        //     let a = "us";
+        //     console.log(a);
+        // }
+        // console.log(a);
+
+        // const ko bas ham ek baar hi declare kar sakte hai, i.e iski value change nhi kar sakte
+        // const b = "change nhi hogi";
+        // console.log(b);
+
+        // conditional statements
+
+        // let age = 2;
+        // if(age>18){
+        //     console.log("you are younge");
+        // }
+        // else if(age==2){
+        //     console.log("you are tooo small");
+        // }
+        // else{
+        //     console.log("you are not young");
+        // }
+
+        // switch statement
+        const book = 5;
+        switch (book) {
+            case 1:
+                console.log("number of books is 1");
+                break;
+                case 3:
+                console.log("number of books is 3");
+                break;
+                case 5:
+                console.log("number of books is 5");
+                break;
+                case 10:
+                console.log("number of books is 10");
+                break;
+            default:
+            console.log("none of the value is matched");
+                break;
+        }
+    </script>
+</body>
+</html>

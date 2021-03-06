@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+     .container{
+         display: flex;
+       
+     }
+     .card{
+        padding: 20px 22px;
+         border: 2px solid purple;
+         margin: 10px 13px;
+         background-color: rgb(165, 181, 230);
+         /* offset x and then offset y and blurr radius and then spread radius then colour [rgba , here a denotes the darkness of color only]*/
+       /*  box-shadow: 3px 5px 10px 15px rgba(0, 128, 0,0.5); */
+
+         /* inset se ham shadow ko box k andar create karte hai*/
+         box-shadow: inset 3px 5px yellow,  3px 5px rgb(54, 211, 49);
+
+             }
+             .card h3{
+                 text-shadow: 3px 8px 2px white;
+             }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="card" id="card1">
+           <h3>card1</h3>
+
+
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur asperiores voluptate ab ullam minus quidem suscipit veniam temporibus natus sed eius non magni neque dicta quia deleniti eum odit, voluptates distinctio blanditiis in officia.</p>
+        </div>
+       <div class="card" id="card2">
+          <h3>card2</h3>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur asperiores voluptate ab ullam minus quidem suscipit veniam temporibus natus sed eius non magni neque dicta quia deleniti eum odit, voluptates distinctio blanditiis in officia.</p>
+         </div>
+       <div class="card" id="card3">
+        <h3>card3</h3> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur asperiores voluptate ab ullam minus quidem suscipit veniam temporibus natus sed eius non magni neque dicta quia deleniti eum odit, voluptates distinctio blanditiis in officia.</p>      
+    </div>
+     
+   </div>
+</body>
+</html>

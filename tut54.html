@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Loops</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li class="item">this is item 1</li>
+            <li class="item">this is item 2</li>
+            <li class="item">this is item 3</li>
+            <li class="item">this is item 4</li>
+            <li class="item">this is item 5</li>
+        </ul>
+    </div>
+    <script>
+        // console.log(" this is the tutorial 54");
+        // for(let i=0; i<5;i++){
+        //     console.log(i);
+        // }
+        
+        let ar = ["rohan", "sanjiv","deepti","pooja" ];
+        // for(let index =0; index<ar.length;index++){
+        //     console.log("hello frienda "+ ar[index]);
+        // }
+
+        // ar.forEach(function f(element){
+        //     console.log("Hello "+element);
+        // })
+
+        for(element of ar ){
+            console.log(element);
+        }
+
+        let employee = {
+            name: "asb",
+            salary: 100,
+            cahnel: "sfds"
+        }
+        for(key in employee){
+            console.log(`${key} of employee is ${employee[key]}`);
+        }
+
+        // while loop in js
+        let i =0;
+        while(i<7){
+            console.log(i);
+            i++;
+        }
+
+        let j=0
+        do{
+            console.log(j);
+            j++;
+        }
+        while(j<5);
+    </script>
+</body>
+</html>

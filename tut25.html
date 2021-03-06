@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS positioning</title>
+    <style>
+        /* CSS position :- static(by default), relative[we can use top , left ,bottom,left changement i.e relatetive to normal and it leaves a gap at its original position], 
+        absolute[parent k relatve positioin change hogi],
+        fixed[scroll karne par  fixed wala element apne place pe hi hoga , it will not move while scrolling] and 
+        sticky []*/
+        .container{
+            border: 3px solid green;
+            background-color: greenyellow;
+            height: 800px;
+        }
+        .box{
+            border: 3px solid rgb(228, 143, 143);
+            width: 100px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+        #box3{
+            /*position: absolute; 
+            top: 34px;
+            left: 120px; */
+            /*position: fixed;  /*[position relative to the browser window]*/
+           /* right: 4px; */
+           position: sticky; /* iss position se ye box browser pe stick ho jaayega it will not go down while scrolling*/
+           top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"> <strong>chat with us</strong></div>
+        <div class="box" id="box4"></div>
+
+    </div>
+</body>
+</html>

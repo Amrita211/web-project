@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <!-- z index static(default positoin) pe work nhi karta hai i.e it work for relative , absolute, sticky,fixed-->
+    <style>
+        .box{
+            width: 170px;
+            height: 120px;
+            border: 2px solid black;
+        }
+        #box1{
+            position: relative;
+            z-index: 34; /* jis z-index ki value jada hogi wo upar ki taraf dikhega*/
+            top: 40px;
+            background-color: green;
+        }
+        #box2{
+            /* isse box bhi gayab ho jaayega aur uski  jagah khaali nhi rahegi*/
+           /* display: none; */
+
+           /* hide element but show its empty space*/ 
+          /* visibility: hidden; */
+            position: relative;
+            z-index: 60;
+            top: 20px;
+            background-color: rgb(180, 30, 148);
+        }
+        #box3{
+            background-color: rgb(163, 28, 10);
+        }
+        #box4{
+            background-color: rgb(0, 34, 128);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
